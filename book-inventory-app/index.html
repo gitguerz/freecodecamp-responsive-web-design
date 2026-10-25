@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Book Inventory</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th><th>Author</th><th>Category</th><th>Status</th><th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="read">
+        <td>Dune</td><td>Frank Herbert</td><td>Sci-Fi</td>
+        <td><span class="status">Read</span></td>
+        <td><span class="rate three"><span></span><span></span><span></span></span></td> <!-- class holds two space-separated words (rate, three); a [class~="three"] selector can match the word three inside it -->
+      </tr>
+      <tr class="to-read">
+        <td>The Fifth Season</td><td>N. K. Jemisin</td><td>Fantasy</td>
+        <td><span class="status">To Read</span></td>
+        <td><span class="rate"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="in-progress">
+        <td>Project Hail Mary</td><td>Andy Weir</td><td>Sci-Fi</td>
+        <td><span class="status">In Progress</span></td>
+        <td><span class="rate"><span></span><span></span><span></span></span></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
