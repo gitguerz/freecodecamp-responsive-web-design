@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- sets character encoding so special chars render right -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes the page scale right on mobile -->
+  <title>Survey Form</title> <!-- browser tab title -->
+  <link rel="stylesheet" href="styles.css"> <!-- links your CSS file, required by the test note -->
+</head>
+<body>
+
+  <h1 id="title">freeCodeCamp Survey Form</h1> <!-- required: h1, id="title" -->
+  <p id="description">Thanks for taking the time to help us improve the platform</p> <!-- required: p, id="description" -->
+
+  <form id="survey-form"> <!-- required: form, id="survey-form", everything below lives inside it -->
+
+    <label id="name-label" for="name">Name <!-- required id="name-label"; "for" ties the label to the input -->
+      <input id="name" type="text" placeholder="Enter your name" required> <!-- type="text", placeholder, required -->
+    </label>
+
+    <label id="email-label" for="email">Email <!-- required id="email-label" -->
+      <input id="email" type="email" placeholder="Enter your email" required> <!-- type="email" gives free HTML5 validation -->
+    </label>
+
+    <label id="number-label" for="number">Age <!-- required id="number-label" -->
+      <input id="number" type="number" min="1" max="120" placeholder="Age in years" required> <!-- min/max required, type="number" blocks non-numbers -->
+    </label>
+
+    <label for="dropdown">Which option best describes your current role?
+      <select id="dropdown"> <!-- required id="dropdown", needs 2+ selectable options -->
+        <option value="" disabled selected>Select an option</option> <!-- disabled so it doesn't count toward the "2 selectable" requirement -->
+        <option value="student">Student</option>
+        <option value="dev">Full Time Developer</option>
+        <option value="hobby">Hobbyist</option>
+      </select>
+    </label>
+
+    <fieldset> <!-- groups related radios visually and semantically -->
+      <legend>How did you hear about freeCodeCamp?</legend>
+      <label><input type="radio" name="referrer" value="search"> Search</label> <!-- radios in a group share the same name -->
+      <label><input type="radio" name="referrer" value="friend"> Friend</label>
+      <label><input type="radio" name="referrer" value="other"> Other</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What would you like to see improved?</legend>
+      <label><input type="checkbox" value="frontend"> Front-end projects</label> <!-- each checkbox just needs a value attr -->
+      <label><input type="checkbox" value="backend"> Back-end projects</label>
+      <label><input type="checkbox" value="data"> Data visualization</label>
+    </fieldset>
+
+    <label for="comments">Any comments or suggestions?
+      <textarea id="comments" placeholder="Enter your comment here"></textarea> <!-- any textarea satisfies the test -->
+    </label>
+
+    <button id="submit" type="submit">Submit</button> <!-- required id="submit", type="submit" -->
+
+  </form>
+
+</body>
+</html>
