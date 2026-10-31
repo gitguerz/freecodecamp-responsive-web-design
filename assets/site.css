@@ -213,3 +213,21 @@ a:focus-visible { outline: 3px solid var(--peach); outline-offset: 2px; } /* cle
   color: var(--muted);                               /* muted purple */
 }
 .bx-footer p { margin: 0 0 6px; }                    /* tight paragraph spacing */
+.bx-mascot {                                         /* penguin sign-off under the footer links */
+  height: 54px;                                      /* tall enough for the night penguin's outline, so nothing jumps when the theme flips */
+  margin-top: 12px;                                  /* breathing room under the links */
+  display: flex;                                     /* flex so the penguin centers inside the box */
+  align-items: center;                               /* centered top to bottom */
+  justify-content: center;                           /* centered left to right */
+}
+.bx-penguin { image-rendering: pixelated; }          /* keep hard pixel edges, never smooth/blur them */
+.bx-penguin--day { width: 30px; height: 45px; }      /* day penguin: 10 x 15 art-pixels at 3px each */
+.bx-penguin--night {                                 /* night penguin (square file with the gray outline) */
+  width: 54px;                                       /* same 3px-per-pixel math, so his body matches the day penguin */
+  height: 54px;                                      /* square file */
+  display: none;                                     /* hidden by default (light mode); also hides it from screen readers */
+}
+@media (prefers-color-scheme: dark) {                /* follow the visitor's system dark mode */
+  .bx-penguin--day { display: none; }                /* dark: hide the day penguin... */
+  .bx-penguin--night { display: block; }             /* ...and show the outlined one */
+}

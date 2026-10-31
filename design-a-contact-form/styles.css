@@ -1,0 +1,79 @@
+* { 
+  box-sizing: border-box; 
+}
+
+body { 
+  margin: 0; 
+  min-height: 100vh; 
+  padding: 40px 16px; 
+  background-color: #19151e; 
+  color: #f7eef3; 
+  font-family: system-ui, sans-serif; 
+}
+
+.form-container { 
+  width: 100%; 
+  max-width: 480px; 
+  margin: auto; 
+  background-color: #2b2232; 
+  border: 1px solid #6c5678; 
+  border-radius: 16px; 
+  padding: 32px; 
+}
+
+h2 { 
+  margin: 0 0 12px; 
+  font-size: 2rem; 
+}
+
+p { 
+  margin: 0 0 28px; 
+  color: #d0c3d6; 
+  line-height: 1.6; 
+}
+
+label { 
+  display: block; 
+  margin: 0 0 8px; 
+  color: #ead7f5; 
+  font-weight: 600; 
+}
+
+input, textarea { 
+  width: 100%; 
+  padding: 12px; 
+  margin-bottom: 22px; 
+  border: 2px solid #9f88ad; 
+  border-radius: 6px; 
+  background-color: #19151e; 
+  color: #f7eef3; 
+  font: inherit; /* font: inherit makes inputs and textareas use the page font, since form controls ignore it by default */
+}
+
+textarea { 
+  resize: vertical; 
+  min-height: 130px; 
+}
+
+input:focus-visible, 
+textarea:focus-visible, 
+button:focus-visible { /* :focus-visible shows this ring only when focus comes from the keyboard, not a mouse click */
+  outline: 3px solid #e9b99e; 
+  outline-offset: 3px; /* outline-offset pushes the ring 3px outside the element's edge */
+}
+
+button { 
+  width: 100%; 
+  padding: 13px 20px; 
+  border: 0; 
+  border-radius: 6px; 
+  background-color: #e9b99e; 
+  color: #211923; 
+  font-size: 1.05rem; 
+  font-weight: 700; 
+  cursor: pointer; 
+}
+
+button:hover { 
+  background-color: #d7b7ef; 
+}

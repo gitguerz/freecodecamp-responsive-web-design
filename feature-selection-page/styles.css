@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+/* system-ui is a generic font family: it picks the operating system's own interface font */
+body { margin: 0; min-height: 100vh; padding: 48px 20px; background: #19151e; color: #f7eef3; font-family: system-ui, sans-serif; }
+main { max-width: 680px; margin: auto; }
+/* letter-spacing adds space between every character */
+.eyebrow { color: #d7b7ef; font-size: .75rem; font-weight: 700; letter-spacing: .18em; }
+/* clamp(min, preferred, max): 7vw scales with the screen but is never smaller than 2rem or bigger than 3.5rem */
+h1 { margin: 12px 0; font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.1; }
+/* line-height sets the height of each line of text; a unitless 1.6 means 1.6 times the font size */
+.intro { color: #c6bbc9; margin-bottom: 32px; line-height: 1.6; }
+/* display: grid lays the cards out in a grid. repeat(auto-fit, ...) makes as many columns as fit; minmax(min(100%, 270px), 1fr) keeps each column between 270px (or the full width on tiny screens) and an equal share of the space */
+.feature-card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 16px; }
+.feature-card { display: flex; align-items: center; gap: 16px; padding: 24px 20px; border: 2px solid #5d4c68; border-radius: 12px; background: #28202f; cursor: pointer; }
+.feature-card:hover { border-color: #d7b7ef; }
+/* :has() is a relational pseudo-class: it matches a .feature-card only when it contains a checked input, so the whole card can be styled */
+.feature-card:has(input:checked) { background: #3d2c48; border-color: #d7b7ef; }
+strong, small { display: block; }
+strong { font-size: 1.05rem; }
+small { margin-top: 7px; color: #c6bbc9; line-height: 1.5; }
+/* flex-shrink: 0 stops the checkbox from being squeezed smaller in the flex row; place-items: center centers the checkmark inside the box (grid shorthand for align-items and justify-items) */
+input[type="checkbox"] { appearance: none; width: 24px; height: 24px; flex-shrink: 0; margin: 0; border: 2px solid #bda2ce; border-radius: 5px; background-color: #19151e; display: grid; place-items: center; cursor: pointer; }
+input[type="checkbox"]:checked { background-color: #e9b99e; border-color: #e9b99e; }
+input[type="checkbox"]:checked::after { content: "✓"; display: block; text-align: center; color: #19151e; font-weight: bold; font-size: 18px; line-height: 20px; }
+/* :focus-visible shows the outline only for keyboard focus, not mouse clicks; outline-offset pushes the outline 4px away from the edge */
+input[type="checkbox"]:focus-visible { outline: 3px solid #f7eef3; outline-offset: 4px; }
+.hint { margin-top: 24px; color: #c6bbc9; font-size: .85rem; line-height: 1.6; }

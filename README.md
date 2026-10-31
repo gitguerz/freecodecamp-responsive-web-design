@@ -100,6 +100,9 @@ I'm a self-taught web developer working through six freeCodeCamp certifications 
 | Build | Type | Live | Code |
 |---|---|---|---|
 | Build a Registration Form | rwd workshop | [live](https://builds.guerz.lol/registration-form/registration-form.html) | [code](./registration-form/) |
+| Build a Game Settings Panel | rwd workshop | [live](https://builds.guerz.lol/game-settings-panel/) | [code](./game-settings-panel/) |
+| Design a Feature Selection Page | rwd lab | [live](https://builds.guerz.lol/feature-selection-page/) | [code](./feature-selection-page/) |
+| Design a Contact Form | rwd lab | [live](https://builds.guerz.lol/design-a-contact-form/) | [code](./design-a-contact-form/) |
 
 ### Grid
 
