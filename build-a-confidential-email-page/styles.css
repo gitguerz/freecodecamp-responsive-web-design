@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0 16px 40px;
+  background: #242027;
+  color: #302733;
+  font-family: "Courier New", monospace;  /* typewriter look; monospace is the fallback */
+}
+
+#email {
+  box-sizing: border-box;
+  width: 500px;
+  max-width: 100%;
+  padding: 50px;
+  margin: 50px auto 0;
+  margin-top: 50px;
+  border: 2px solid #9c789a;
+  background: #f4e5d8;
+  box-shadow: 10px 10px 0 #141116;
+}
+
+h1 {
+  margin-top: 32px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.7;
+}
+
+#confidential, #top-secret {  /* # = id selector; the comma styles both stamps */
+  display: inline-block;  /* stamp stays inline but can take padding + transform */
+  padding: 10px;
+  margin-left: 10px;
+  border: 3px double currentColor;  /* double = two-line border; currentColor reuses the text color */
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#confidential {
+  color: #794766;
+  transform: rotate(-7deg);  /* tilts the stamp */
+}
+
+#top-secret {
+  margin-top: 20px;
+  color: #944d3d;
+  transform: rotate(6deg);
+}
+
+.blurred {
+  filter: blur(3px);  /* blurs the secret words */
+}

@@ -105,6 +105,13 @@ I'm a self-taught web developer working through six freeCodeCamp certifications 
 | Design a Feature Selection Page | rwd lab | [live](https://builds.guerz.lol/feature-selection-page/) | [code](./feature-selection-page/) |
 | Design a Contact Form | rwd lab | [live](https://builds.guerz.lol/design-a-contact-form/) | [code](./design-a-contact-form/) |
 
+### Box Model
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Design a Rothko Painting | rwd workshop | [live](https://builds.guerz.lol/design-a-rothko-painting/) | [code](./design-a-rothko-painting/) |
+| Build a Confidential Email Page | rwd lab | [live](https://builds.guerz.lol/build-a-confidential-email-page/) | [code](./build-a-confidential-email-page/) |
+
 ### Grid
 
 | Build | Type | Live | Code |
