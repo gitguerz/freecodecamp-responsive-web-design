@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f0e8;
+  padding: 24px;
+}
+
+h1 { text-align: center; }
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 960px;
+  margin: 32px auto;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* space-between pushes items to opposite ends (top and bottom here, since the direction is column) */
+  flex: 0 0 200px;
+  border: 2px solid black;
+  padding: 20px;
+  min-height: 180px;
+  background: #e2d5ef;
+}
+
+.basic-plan { order: 0; }
+.pro-plan {
+  order: 1;
+  flex-grow: 2;  /* only the Pro card grows to fill leftover space */
+  background: #edc6ae;
+}
+.premium-plan { order: 2; }

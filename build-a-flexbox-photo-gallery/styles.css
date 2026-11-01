@@ -1,0 +1,43 @@
+* {  /* * = universal selector, matches every element */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;  /* shows the heading in all caps without retyping it */
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;  /* centers items along the main axis (left to right in a row) */
+  align-items: center;  /* centers items along the cross axis (top to bottom in a row) */
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;  /* crops the photo to fill its box instead of stretching it */
+  border-radius: 10px;
+}
+
+.gallery::after {  /* empty 350px item at the end of the flex row, used as a spacer */
+  content: "";
+  width: 350px;
+}

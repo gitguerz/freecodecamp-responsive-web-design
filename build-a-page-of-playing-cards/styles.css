@@ -1,0 +1,60 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #1a2a4a;
+  color: #111;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 150px;
+  height: 220px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.left {
+  align-self: flex-start;  /* overrides align-items for just this one item */
+}
+
+.middle {  /* also a flex container: flexbox nested inside a flex item */
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.right {
+  align-self: flex-end;
+  transform: rotate(180deg);  /* flips the bottom-right corner upside down, like a real card */
+}
+
+.red .left,  /* descendant selector (.left inside .red); the commas group three selectors */
+.red .middle,
+.red .right {
+  color: #cc0000;
+}

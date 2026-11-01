@@ -112,6 +112,15 @@ I'm a self-taught web developer working through six freeCodeCamp certifications 
 | Design a Rothko Painting | rwd workshop | [live](https://builds.guerz.lol/design-a-rothko-painting/) | [code](./design-a-rothko-painting/) |
 | Build a Confidential Email Page | rwd lab | [live](https://builds.guerz.lol/build-a-confidential-email-page/) | [code](./build-a-confidential-email-page/) |
 
+### Flexbox
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Build a Flexbox Photo Gallery | rwd workshop | [live](https://builds.guerz.lol/build-a-flexbox-photo-gallery/) | [code](./build-a-flexbox-photo-gallery/) |
+| Design a Set of Colorful Boxes | rwd workshop | [live](https://builds.guerz.lol/design-a-set-of-colorful-boxes/) | [code](./design-a-set-of-colorful-boxes/) |
+| Design a Pricing Plans Layout Page | rwd lab | [live](https://builds.guerz.lol/design-a-pricing-plans-layout-page/) | [code](./design-a-pricing-plans-layout-page/) |
+| Build a Page of Playing Cards | rwd cert project | [live](https://builds.guerz.lol/build-a-page-of-playing-cards/) | [code](./build-a-page-of-playing-cards/) |
+
 ### Grid
 
 | Build | Type | Live | Code |
