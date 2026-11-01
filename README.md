@@ -1,14 +1,15 @@
-# freeCodeCamp Responsive Web Design (v9): my builds
+# freeCodeCamp Responsive Web Design (v9 + legacy v8): my builds
 
 > **These builds live on my site:** [guerz.lol](https://guerz.lol) · browse them all at **[builds.guerz.lol](https://builds.guerz.lol)**
 
 > 🚧 **Work in progress:** this archive is still incomplete. I'm re-learning the RWD (v9) curriculum in order and adding each build as I finish it, so some modules are missing or only partly filled in.
 
-Every workshop, lab, and certification project I've built in freeCodeCamp's **Responsive Web Design (v9)** curriculum, one folder per build, kept in curriculum order.
+Every workshop, lab, and certification project I've built in freeCodeCamp's **Responsive Web Design (v9)** curriculum, one folder per build, kept in curriculum order. It also holds my builds from the older **Legacy Responsive Web Design (V8)** curriculum, kept in their own `legacy-rwd-v8/` folder.
 
 ## What this repo is
 
 - One folder per build (`cat-photo-app/`, `design-a-cafe-menu/`, …), each with its own `index.html` and, from the CSS modules on, a `styles.css`.
+- `legacy-rwd-v8/` holds my builds from freeCodeCamp's older Responsive Web Design (V8) curriculum, one subfolder per build.
 - `index.html` at the root is the landing page for [builds.guerz.lol](https://builds.guerz.lol).
 - The commit history goes back to the first build I logged (July 2026). Builds lived in my site repo first, then moved here.
 
@@ -112,11 +113,30 @@ I'm a self-taught web developer working through six freeCodeCamp certifications 
 
 ### Legacy Responsive Web Design (V8)
 
-One bonus build from freeCodeCamp's older [Responsive Web Design (V8)](https://www.freecodecamp.org/learn/2022/responsive-web-design/) curriculum, kept in its own folder so it doesn't mix with the v9 builds.
+Builds from freeCodeCamp's older [Responsive Web Design (V8)](https://www.freecodecamp.org/learn/2022/responsive-web-design/) curriculum, kept in their own `legacy-rwd-v8/` folder so they don't mix with the v9 builds above.
 
 | Build | Type | Live | Code |
 |---|---|---|---|
+| Learn HTML by Building a Cat Photo App | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/cat-photo-app/) | [code](./legacy-rwd-v8/cat-photo-app/) |
+| Learn Basic CSS by Building a Cafe Menu | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/cafe-menu/) | [code](./legacy-rwd-v8/cafe-menu/) |
+| Learn CSS Colors by Building a Set of Colored Markers | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/colored-markers/) | [code](./legacy-rwd-v8/colored-markers/) |
+| Learn HTML Forms by Building a Registration Form | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/registration-form/) | [code](./legacy-rwd-v8/registration-form/) |
+| Build a Survey Form | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/survey-form/) | [code](./legacy-rwd-v8/survey-form/) |
+| Learn the CSS Box Model by Building a Rothko Painting | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/rothko-painting/) | [code](./legacy-rwd-v8/rothko-painting/) |
+| Learn CSS Flexbox by Building a Photo Gallery | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/photo-gallery/) | [code](./legacy-rwd-v8/photo-gallery/) |
+| Learn Typography by Building a Nutrition Label | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/nutrition-label/) | [code](./legacy-rwd-v8/nutrition-label/) |
+| Learn Accessibility by Building a Quiz | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/accessibility-quiz/) | [code](./legacy-rwd-v8/accessibility-quiz/) |
+| Tribute Page | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/tribute-page/) | [code](./legacy-rwd-v8/tribute-page/) |
+| Learn More About CSS Pseudo Selectors by Building A Balance Sheet | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/balance-sheet/) | [code](./legacy-rwd-v8/balance-sheet/) |
+| Learn Intermediate CSS by Building a Cat Painting | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/cat-painting/) | [code](./legacy-rwd-v8/cat-painting/) |
+| Learn Responsive Web Design by Building a Piano | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/piano/) | [code](./legacy-rwd-v8/piano/) |
+| Technical Documentation Page | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/technical-documentation-page/) | [code](./legacy-rwd-v8/technical-documentation-page/) |
+| Learn CSS Variables by Building a City Skyline | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/city-skyline/) | [code](./legacy-rwd-v8/city-skyline/) |
 | Learn CSS Grid by Building a Magazine | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/magazine/) | [code](./legacy-rwd-v8/magazine/) |
+| Product Landing Page | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/product-landing-page/) | [code](./legacy-rwd-v8/product-landing-page/) |
+| Learn CSS Animation by Building a Ferris Wheel | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/ferris-wheel/) | [code](./legacy-rwd-v8/ferris-wheel/) |
+| Learn CSS Transforms by Building a Penguin | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/penguin/) | [code](./legacy-rwd-v8/penguin/) |
+| Personal Portfolio Webpage | legacy rwd v8 | [live](https://builds.guerz.lol/legacy-rwd-v8/personal-portfolio-webpage/) | [code](./legacy-rwd-v8/personal-portfolio-webpage/) |
 
 ## Hand-coded by me
 
@@ -125,8 +145,8 @@ Every line in these builds was written by me, by hand, as part of learning. No A
 ## Run it locally
 
 ```bash
-git clone https://github.com/gitguerz/freecodecamp-responsive-web-design-v9.git   # download the repo
-cd freecodecamp-responsive-web-design-v9                                          # step into it
+git clone https://github.com/gitguerz/freecodecamp-responsive-web-design.git      # download the repo
+cd freecodecamp-responsive-web-design                                             # step into it
 python3 -m http.server 8000                                                        # serve the folder at http://localhost:8000
 ```
 
