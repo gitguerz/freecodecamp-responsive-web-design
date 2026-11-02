@@ -1,0 +1,72 @@
+* { 
+   box-sizing: border-box; 
+}
+body { 
+   margin: 0; 
+   padding: 32px 16px; 
+   background: #211e26; 
+   color: #eee5df; 
+   font-family: Georgia, serif; 
+   line-height: 1.8; 
+}
+
+#main { 
+   max-width: 760px; 
+   margin: 0 auto; 
+   padding: 32px; 
+   background: #302b35; 
+   border-top: 4px solid #c3999d; 
+}
+
+#title { 
+   margin: 0 0 24px; 
+   color: #dec1b2; 
+   font-size: clamp(2.5rem, 8vw, 4rem); 
+   text-align: center; 
+}
+
+#img-div { 
+   margin: 0; 
+}
+
+#image { 
+   display: block; 
+   max-width: 100%; 
+   height: auto;  /* keeps the image's proportions when max-width shrinks it */
+   margin: 0 auto; 
+   border-radius: 3px; 
+}
+
+#img-caption { 
+   margin-top: 16px; 
+   text-align: center; 
+   color: #c8b9cd; 
+   font-style: italic; 
+}
+
+#tribute-info { 
+   margin: 32px auto; 
+   max-width: 60ch;  /* ch = width of the 0 character, so this is roughly 60 characters per line */
+}
+
+#tribute-link { 
+   display: block; 
+   text-align: center; 
+   color: #edbfa9; 
+   text-underline-offset: 5px;  /* moves the underline 5px away from the text */
+}
+
+#tribute-link:hover { 
+   color: #fff; 
+}
+
+#tribute-link:focus-visible { 
+   outline: 2px solid #edbfa9; 
+   outline-offset: 6px; 
+}
+
+@media (max-width: 480px) { 
+   #main { 
+      padding: 20px; 
+   } 
+}

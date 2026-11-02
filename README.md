@@ -121,6 +121,20 @@ I'm a self-taught web developer working through six freeCodeCamp certifications 
 | Design a Pricing Plans Layout Page | rwd lab | [live](https://builds.guerz.lol/design-a-pricing-plans-layout-page/) | [code](./design-a-pricing-plans-layout-page/) |
 | Build a Page of Playing Cards | rwd cert project | [live](https://builds.guerz.lol/build-a-page-of-playing-cards/) | [code](./build-a-page-of-playing-cards/) |
 
+### Typography
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Build a Nutritional Label | rwd workshop | [live](https://builds.guerz.lol/build-a-nutritional-label/) | [code](./build-a-nutritional-label/) |
+| Build a Newspaper Article | rwd lab | [live](https://builds.guerz.lol/build-a-newspaper-article/) | [code](./build-a-newspaper-article/) |
+
+### CSS Accessibility
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Build a Quiz Webpage | rwd workshop | [live](https://builds.guerz.lol/build-a-quiz-webpage/) | [code](./build-a-quiz-webpage/) |
+| Build a Tribute Page | rwd lab | [live](https://builds.guerz.lol/build-a-tribute-page/) | [code](./build-a-tribute-page/) |
+
 ### Grid
 
 | Build | Type | Live | Code |

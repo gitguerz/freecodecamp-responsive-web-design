@@ -1,0 +1,93 @@
+html { 
+   font-size: 24px; 
+}
+
+* { 
+   box-sizing: border-box; 
+}
+
+body { 
+   margin: 0; 
+   padding: 28px 16px; 
+   background: #29232e; 
+   color: #29232e; 
+}
+
+.newspaper { 
+   font-size: 16px; 
+   font-family: 'Open Sans', sans-serif; 
+   max-width: 800px; 
+   margin: auto; 
+   padding: 32px; 
+   background: #f7efdf; 
+   border-top: 8px solid #ac6252; 
+   box-shadow: 8px 8px 0 #161219; 
+}
+
+.name { 
+   font-size: 2rem; 
+   font-family: 'Times New Roman', serif; 
+   text-transform: uppercase; 
+   text-align: center; 
+   margin: 0; 
+   padding-bottom: 18px; 
+   border-bottom: 5px double #29232e; 
+   letter-spacing: -2px; 
+}
+
+.date { 
+   text-align: center; 
+   padding-bottom: 16px; 
+   border-bottom: 1px solid #29232e; 
+}
+
+.headline { 
+   font-size: 2em; 
+   font-weight: bold; 
+   margin-bottom: 12px; 
+   line-height: 1.15; 
+}
+
+.sub-headline { 
+   font-weight: 100; 
+   font-size: 1.5em; 
+   font-style: italic; 
+   color: #784735; 
+   margin-top: 0; 
+}
+
+.author { 
+   font-weight: bold; 
+   text-transform: uppercase; 
+   border-block: 1px solid #29232e;  /* border-block = top and bottom borders in one line */
+   padding: 12px 0; 
+   letter-spacing: 1px; 
+}
+
+.text { 
+   text-indent: 20px;  /* indents only the first line of each paragraph */
+   line-height: 2em; 
+}
+
+.text::first-letter {  /* ::first-letter styles just the first letter of the paragraph */
+   font-weight: bold; 
+   font-size: 2em; 
+   color: #784735; 
+}
+
+.edition { 
+   border-top: 5px double #29232e; 
+   padding-top: 16px; 
+   font-size: 12px; 
+   text-align: center; 
+}
+
+@media (max-width: 480px) {  /* media query: these rules only apply on screens 480px wide or narrower */
+   .newspaper { 
+      padding: 20px; 
+   } 
+   .name { 
+      letter-spacing: -1px; 
+      overflow-wrap: anywhere;  /* lets long words break so they don't overflow on small screens */
+   } 
+}
