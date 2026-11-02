@@ -1,34 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Book Inventory</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th><th>Author</th><th>Category</th><th>Status</th><th>Rate</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="read">
-        <td>Dune</td><td>Frank Herbert</td><td>Sci-Fi</td>
-        <td><span class="status">Read</span></td>
-        <td><span class="rate three"><span></span><span></span><span></span></span></td> <!-- class holds two space-separated words (rate, three); a [class~="three"] selector can match the word three inside it -->
-      </tr>
-      <tr class="to-read">
-        <td>The Fifth Season</td><td>N. K. Jemisin</td><td>Fantasy</td>
-        <td><span class="status">To Read</span></td>
-        <td><span class="rate"><span></span><span></span><span></span></span></td>
-      </tr>
-      <tr class="in-progress">
-        <td>Project Hail Mary</td><td>Andy Weir</td><td>Sci-Fi</td>
-        <td><span class="status">In Progress</span></td>
-        <td><span class="rate"><span></span><span></span><span></span></span></td>
-      </tr>
-    </tbody>
-  </table>
-</body>
-</html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>Book Inventory</h1>
+      <p>The shelf is full. The reading list is winning.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>A small shelf of stories, tracked one book at a time.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Title</th>  <!-- scope="col" tells screen readers this header labels the whole column -->
+              <th scope="col">Author</th><th scope="col">Category</th>
+              <th scope="col">Status</th>
+              <th scope="col">Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="read">
+              <td>Ghost World</td>
+              <td>Daniel Clowes</td>
+              <td>Graphic novel</td>
+              <td>
+                <span class="status">Read</span>
+              </td>
+              <td>
+                <span class="rate three" aria-label="3 out of 3">  <!-- aria-label gives the dot rating a text version for screen readers; "rate three" is two classes, which is why the CSS uses [class~="three"] -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </td>
+            </tr>
+            <tr class="read">
+              <td>Blankets</td>
+              <td>Craig Thompson</td>
+              <td>Graphic memoir</td>
+              <td>
+                <span class="status">Read</span>
+              </td>
+              <td>
+                <span class="rate two" aria-label="2 out of 3">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </td>
+            </tr>
+            <tr class="read">
+              <td>Player Piano (aka Utopia 14)</td>
+              <td>Kurt Vonnegut</td>
+              <td>Science fiction</td>
+              <td>
+                <span class="status">Read</span>
+              </td>
+              <td>
+                <span class="rate one" aria-label="1 out of 3">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </td>
+            </tr>
+            <tr class="in-progress">
+              <td>Habibi</td>
+              <td>Craig Thompson</td>
+              <td>Graphic novel</td>
+              <td>
+                <span class="status">In Progress</span>
+              </td>
+              <td>
+                <span class="rate" aria-label="Not rated">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </td>
+            </tr>
+            <tr class="to-read">
+              <td>Building Stories</td>
+              <td>Chris Ware</td>
+              <td>Graphic Novel</td>
+              <td>
+                <span class="status">To Read</span>
+              </td>
+              <td>
+                <span class="rate" aria-label="Not rated">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+  </html>

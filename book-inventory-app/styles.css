@@ -1,55 +1,130 @@
-span { display: inline-block; }
 
-tr[class="read"] { /* [class="read"] exact-match attribute selector: matches only when the whole class value is exactly "read", so a second class on the tr would break it */
-  background-image: linear-gradient(90deg, #eafbea, #d7f5d7);
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 40px 20px;
+	background: #282330;
+	color: #292333;
+	font-family: Georgia, serif;
+}
+
+main {
+	max-width: 1050px;
+	margin: auto;
+}
+
+h1 {
+	margin-bottom: 8px;
+	color: #edc2ab;
+	font-size: 2.5rem;
+}
+
+main > p {
+	margin-bottom: 28px;
+	color: #c9b6d4;
+}
+
+.table-wrap {
+	overflow-x: auto;  /* adds a horizontal scrollbar to the wrapper only when the table is too wide */
+	border: 2px solid #b19abc;
+	border-radius: 8px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #f6efe7;
+}
+
+caption {
+	padding: 16px;
+	background: #3d3348;
+	color: #f6efe7;
+	text-align: left;
+}
+
+th {
+	padding: 18px 16px;
+	background: #51415d;
+	color: #fff;
+	text-align: left;
+}
+
+td {
+	padding: 18px 16px;
+	border-bottom: 1px solid #c6bdc7;
+}
+
+td:first-child {
+	font-weight: bold;
+}
+
+span[class="status"],  /* [class="status"] = exact match; [class^="rate"] = class value starts with "rate" */
+span[class^="rate"] {
+	width: 120px;
+	height: 36px;
+	padding: 6px 8px;
+	white-space: nowrap;  /* keeps the text on one line */
+	vertical-align: middle;
+	text-align: center;
+}
+
+span[class="status"] {
+	border-radius: 20px;
+	font: 14px/20px sans-serif;  /* font shorthand: size/line-height family */
+}
+
+span {
+	display: inline-block;
+}
+
+tr[class="read"] {
+	background-image: linear-gradient(90deg, #eafbea, #d7f5d7);
 }
 
 tr[class="to-read"] {
-  background-image: linear-gradient(90deg, #fff7e0, #ffeebf);
+	background-image: linear-gradient(90deg, #fff7e0, #ffeebf);
 }
 
 tr[class="in-progress"] {
-  background-image: linear-gradient(90deg, #e6efff, #cfe0ff);
+	background-image: linear-gradient(90deg, #e6efff, #cfe0ff);
 }
 
-tr[class="to-read"] span[class="status"] { /* the space is a descendant combinator: matches the status span anywhere inside a to-read row */
-  border: 2px solid #d19a00;
-  background-image: linear-gradient(90deg, #ffe9a8, #ffd766);
+tr[class="to-read"] span[class="status"] {
+	border: 2px solid #936d00;
+	background-image: linear-gradient(90deg, #ffe9a8, #ffd766);
 }
 
 tr[class="read"] span[class="status"] {
-  border: 2px solid #2e8b2e;
-  background-image: linear-gradient(90deg, #bff0bf, #8fe08f);
+	border: 2px solid #2e702e;
+	background-image: linear-gradient(90deg, #bff0bf, #8fe08f);
 }
 
 tr[class="in-progress"] span[class="status"] {
-  border: 2px solid #2e5cff;
-  background-image: linear-gradient(90deg, #bcd2ff, #8fb0ff);
+	border: 2px solid #39549b;
+	background-image: linear-gradient(90deg, #bcd2ff, #8fb0ff);
 }
 
-span[class="status"], span[class^="rate"] { /* [class^="rate"] starts-with selector: matches any class value that begins with "rate" */
-  height: 20px;
-  width: auto;
-  padding: 4px 8px;
+span[class^="rate"] > span {
+	width: 14px;
+	height: 14px;
+	margin: 2px;
+	border: 1px solid #77627c;
+	border-radius: 50%;
+	background-color: #fff;
 }
 
-span[class^="rate"] > span { /* > is the child combinator: matches only spans that are direct children of the rate span, not deeper descendants */
-  border: 1px solid #999;
-  border-radius: 50%;
-  margin: 2px;
-  height: 14px;
-  width: 14px;
-  background-color: #ffffff;
+span[class~="one"] span:first-child {  /* [class~="one"] matches the word one inside a space-separated class list */
+	background-image: linear-gradient(45deg, #ffd75e, #ffb300);
 }
 
-span[class~="one"] span:first-child { /* [class~="one"] matches the word one anywhere in a space-separated class list; :first-child matches the span only if it is the first child of its parent */
-  background-image: linear-gradient(45deg, #ffd75e, #ffb300);
-}
-
-span[class~="two"] span:nth-child(-n+2) { /* :nth-child(-n+2) matches the first two children: n counts 0, 1, 2, giving 2, 1, 0 */
-  background-image: linear-gradient(45deg, #ffd75e, #ffb300);
+span[class~="two"] span:nth-child(-n+2) {  /* :nth-child(-n+2) = the first two children */
+	background-image: linear-gradient(45deg, #ffd75e, #ffb300);
 }
 
 span[class~="three"] span {
-  background-image: linear-gradient(45deg, #ffd75e, #ffb300);
+	background-image: linear-gradient(45deg, #ffd75e, #ffb300);
 }

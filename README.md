@@ -135,6 +135,20 @@ I'm a self-taught web developer working through six freeCodeCamp certifications 
 | Build a Quiz Webpage | rwd workshop | [live](https://builds.guerz.lol/build-a-quiz-webpage/) | [code](./build-a-quiz-webpage/) |
 | Build a Tribute Page | rwd lab | [live](https://builds.guerz.lol/build-a-tribute-page/) | [code](./build-a-tribute-page/) |
 
+### Positioning
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Build a Cat Painting | rwd workshop | [live](https://builds.guerz.lol/build-a-cat-painting/) | [code](./build-a-cat-painting/) |
+| Build a House Painting | rwd lab | [live](https://builds.guerz.lol/build-a-house-painting/) | [code](./build-a-house-painting/) |
+
+### Attribute Selectors
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Build a Balance Sheet | rwd workshop | [live](https://builds.guerz.lol/build-a-balance-sheet/) | [code](./build-a-balance-sheet/) |
+| Build a Book Inventory App | rwd lab | [live](https://builds.guerz.lol/book-inventory-app/) | [code](./book-inventory-app/) |
+
 ### Grid
 
 | Build | Type | Live | Code |
