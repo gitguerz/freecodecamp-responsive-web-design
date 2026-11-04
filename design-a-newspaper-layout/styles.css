@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  color: #241e2b;
+  background-color: #d8cbe3;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;  /* auto = as tall as the content; 1fr = an equal share of the leftover height */
+  grid-template-areas:  /* draws the layout as a picture: each string is a row, each word is a cell */
+    "title title title"
+    "feature-article feature-article cover-image"  /* repeat a name to span cells: feature-article spans 2 columns, cover-image continues down the next row */
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 2px solid #241e2b;
+  background-color: #fff5e8;
+  box-shadow: 8px 8px 0 #241e2b;
+}
+
+.title {
+  grid-area: title;  /* puts this element in the cell named title in grid-template-areas */
+  padding-bottom: 20px;
+  border-bottom: 5px double #241e2b;
+  text-align: center;
+}
+
+.title h1 {
+  margin: 8px 0;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.title p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.edition {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.cover-image {
+  grid-area: cover-image;
+  margin: 0;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+article {
+  min-width: 0;  /* lets a grid item shrink below its content's width, so long text can't force the column wider */
+  border-top: 2px solid #241e2b;
+  padding-top: 12px;
+}
+
+h2,
+h3 {
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+article p {
+  margin: 0;
+}
+
+.cover-image img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border: 1px solid #241e2b;
+  filter: grayscale(100%);  /* grayscale() drains the color from the image; 100% = fully black and white */
+}
+
+figcaption {
+  padding-top: 8px;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+

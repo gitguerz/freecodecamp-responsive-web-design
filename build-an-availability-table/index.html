@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weekly Availability</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Find our overlap.</h1>
+    <p>Less scheduling ping-pong. More getting things done.</p>
+    <div class="table-wrap">
+      <table>
+        <caption>Weekly Meeting Availability Schedule</caption>
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="sharp">  <!-- sharp = an on-the-hour row (solid line under it); half = a half-hour row (dashed line) -->
+            <th class="time" scope="row">9:00 AM</th>
+            <td class="available-0" aria-label="0 available">0</td>
+            <td class="available-1" aria-label="1 available">1</td>
+            <td class="available-2" aria-label="2 available">2</td>
+            <td class="available-3" aria-label="3 available">3</td>
+            <td class="available-4" aria-label="4 available">4</td>
+          </tr>
+          <tr class="half">
+            <th class="time" scope="row">9:30 AM</th>
+            <td class="available-1" aria-label="1 available">1</td>
+            <td class="available-2" aria-label="2 available">2</td>
+            <td class="available-3" aria-label="3 available">3</td>
+            <td class="available-4" aria-label="4 available">4</td>
+            <td class="available-5" aria-label="5+ available">5+</td>
+          </tr>
+          <tr class="sharp">
+            <th class="time" scope="row">10:00 AM</th>
+            <td class="available-2" aria-label="2 available">2</td>
+            <td class="available-3" aria-label="3 available">3</td>
+            <td class="available-4" aria-label="4 available">4</td>
+            <td class="available-5" aria-label="5+ available">5+</td>
+            <td class="available-0" aria-label="0 available">0</td>
+          </tr>
+          <tr class="half">
+            <th class="time" scope="row">10:30 AM</th>
+            <td class="available-3" aria-label="3 available">3</td>
+            <td class="available-4" aria-label="4 available">4</td>
+            <td class="available-5" aria-label="5+ available">5+</td>
+            <td class="available-0" aria-label="0 available">0</td>
+            <td class="available-1" aria-label="1 available">1</td>
+          </tr>
+          <tr class="sharp">
+            <th class="time" scope="row">11:00 AM</th>
+            <td class="available-4" aria-label="4 available">4</td>
+            <td class="available-5" aria-label="5+ available">5+</td>
+            <td class="available-0" aria-label="0 available">0</td>
+            <td class="available-1" aria-label="1 available">1</td>
+            <td class="available-2" aria-label="2 available">2</td>
+          </tr>
+          <tr class="half">
+            <th class="time" scope="row">11:30 AM</th>
+            <td class="available-5" aria-label="5+ available">5+</td>
+            <td class="available-0" aria-label="0 available">0</td>
+            <td class="available-1" aria-label="1 available">1</td>
+            <td class="available-2" aria-label="2 available">2</td>
+            <td class="available-3" aria-label="3 available">3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="legend">
+      <span>Availability</span>
+      <div id="legend-gradient"></div>  <!-- empty on purpose: the gradient is painted by css (background-image) -->
+      <div class="labels">
+        <span>0 people</span>
+        <span>5+ people</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

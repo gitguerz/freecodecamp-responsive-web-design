@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Side Quest</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="newspaper-layout">  <!-- the grid container: its children get placed by the named areas in the css -->
+      <header class="title">
+        <p class="edition">Independent news for easily distracted citizens</p>
+        <h1>The Daily Side Quest</h1>
+        <p>November 4, 2026 · Vol. 01 · All the news that fits between tabs</p>
+      </header>
+
+      <article class="feature-article">
+        <h2>Local Developer Opens One Tab, Somehow Acquires Forty-Seven</h2>
+        <p>
+          What began as a quick search for a CSS property became a sprawling
+          investigation into typography, mechanical keyboards, and whether
+          raccoons have hobbies. The original bug remains at large.
+        </p>
+      </article>
+
+      <article class="secondary-article">
+        <h2>Grid Finally Agrees to Put Things Where Asked</h2>
+        <p>
+          After tense negotiations, named grid areas have restored order to
+          the newsroom. Officials credit three equal columns and a sensible
+          gap. A rogue margin declined to comment.
+        </p>
+      </article>
+
+      <figure class="cover-image">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
+          alt="An orange-and-white cat lounging on a blanket"
+        >
+        <figcaption>Our editor in chief, taking another paid nap.</figcaption>
+      </figure>
+
+      <article class="small-article1">  <!-- the class name matches an area name in grid-template-areas (grid-area: small-article1) -->
+        <h3>Coffee Files for Overtime</h3>
+        <p>
+          The newsroom's most dependable employee demands a larger mug
+          and an end to the phrase “just one more fix.”
+        </p>
+      </article>
+
+      <article class="small-article2">
+        <h3>Semicolon Returns Home</h3>
+        <p>
+          A missing punctuation mark was found three lines above the error.
+          Family members describe the reunion as painfully predictable.
+        </p>
+      </article>
+
+      <article class="small-article3">
+        <h3>Weather: Cloudy With Tabs</h3>
+        <p>
+          Expect scattered distractions throughout the afternoon, followed
+          by a strong chance of actually shipping something.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

@@ -2,3 +2,5 @@
 .DS_Store
 # Wrangler's local cache folder (only exists if you run wrangler on your Mac)
 .wrangler/
+# original Tribute Page photo; the committed copy is cris-fern.jpg
+build-a-tribute-page/cris fern.jpg

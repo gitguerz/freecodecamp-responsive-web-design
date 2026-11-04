@@ -149,11 +149,28 @@ I'm a self-taught web developer working through six freeCodeCamp certifications 
 | Build a Balance Sheet | rwd workshop | [live](https://builds.guerz.lol/build-a-balance-sheet/) | [code](./build-a-balance-sheet/) |
 | Build a Book Inventory App | rwd lab | [live](https://builds.guerz.lol/book-inventory-app/) | [code](./book-inventory-app/) |
 
+### Responsive Design
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Design a Piano | rwd workshop | [live](https://builds.guerz.lol/design-a-piano/) | [code](./design-a-piano/) |
+| Build a Technical Documentation Page | rwd cert project | [live](https://builds.guerz.lol/build-a-technical-documentation-page/) | [code](./build-a-technical-documentation-page/) |
+
+### Variables
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Build a City Skyline | rwd workshop | [live](https://builds.guerz.lol/build-a-city-skyline/) | [code](./build-a-city-skyline/) |
+| Build an Availability Table | rwd lab | [live](https://builds.guerz.lol/build-an-availability-table/) | [code](./build-an-availability-table/) |
+
 ### Grid
 
 | Build | Type | Live | Code |
 |---|---|---|---|
 | CSS Grid | rwd workshop | [live](https://builds.guerz.lol/css-grid/) | [code](./css-grid/) |
+| Build a Magazine | rwd workshop | [live](https://builds.guerz.lol/build-a-magazine/) | [code](./build-a-magazine/) |
+| Design a Newspaper Layout | rwd lab | [live](https://builds.guerz.lol/design-a-newspaper-layout/) | [code](./design-a-newspaper-layout/) |
+| Build a Product Landing Page | rwd cert project | [live](https://builds.guerz.lol/build-a-product-landing-page/) | [code](./build-a-product-landing-page/) |
 
 ### Legacy Responsive Web Design (V8)
 

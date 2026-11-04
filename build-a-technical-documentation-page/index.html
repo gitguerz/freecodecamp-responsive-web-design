@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Documentation</title>  <!-- the tab title and the main thing search engines and screen readers announce first -->
+<meta name="description" content="A short reference to core CSS ideas: selectors, the box model, positioning and more.">  <!-- the summary search engines can show under the page title -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav id="navbar">
+<header>CSS Documentation</header>
+<a class="nav-link" href="#Introduction">Introduction</a>  <!-- fragment link: # plus an id jumps to the element with that id on this page -->
+<a class="nav-link" href="#Selectors">Selectors</a>
+<a class="nav-link" href="#The_Box_Model">The Box Model</a>
+<a class="nav-link" href="#Positioning">Positioning</a>
+<a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+</nav>
+<main id="main-doc">
+<section class="main-section" id="Introduction">  <!-- this id is where the Introduction nav link jumps to -->
+<header>Introduction</header>
+<p>CSS (Cascading Style Sheets) is the language used to style the visual presentation of web
+pages.</p>
+<p>It works alongside HTML, which provides structure, while CSS controls color, layout, and
+typography.</p>
+<ul>
+<li>CSS separates content from presentation.</li>
+<li>One stylesheet can style many pages.</li>
+</ul>
+</section>
+<section class="main-section" id="Selectors">
+<header>Selectors</header>
+<p>A selector targets the HTML elements you want to style.</p>
+<p>You can select by tag, class, id, or attribute.</p>
+<code>p { color: navy; }</code>  <!-- code marks a snippet of code; the css makes it a block with a monospace font -->
+<code>.button { padding: 8px; }</code>
+<ul>
+<li>Tag selectors target every element of a type.</li>
+<li>Class selectors are reusable.</li>
+</ul>
+</section>
+<section class="main-section" id="The_Box_Model">
+<header>The Box Model</header>
+<p>Every element is a rectangular box made of content, padding, border, and margin.</p>
+<code>div { padding: 16px; border: 1px solid; }</code>
+<p>Understanding the box model is key to controlling spacing.</p>
+</section>
+<section class="main-section" id="Positioning">
+<header>Positioning</header>
+<p>The position property controls how an element sits in the document flow.</p>
+<code>.box { position: absolute; }</code>
+<p>Values include static, relative, absolute, fixed, and sticky.</p>
+</section>
+<section class="main-section" id="Responsive_Design">
+<header>Responsive Design</header>
+<p>Responsive design lets one site adapt to any screen size.</p>
+<code>@media (min-width: 768px) { }</code>
+<p>Media queries apply styles based on the device.</p>
+<ul>
+<li>Use relative units for fluid layouts.</li>
+</ul>
+</section>
+</main>
+</body>
+</html>

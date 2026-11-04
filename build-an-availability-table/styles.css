@@ -1,0 +1,149 @@
+                
+:root {
+ --color0: #f3ece8;  /* the six-step color scale lives in :root; the cells and the legend both read from it */
+ --color1: #e2d5e9;
+ --color2: #c4acd3;
+ --color3: #a98cb9;
+ --color4: #856694;
+ --color5: #5d416e;
+ --solid-border: 2px solid #55465c;  /* a custom property can store a whole shorthand value (width, style, color), not just one color */
+ --dashed-border: 1px dashed #55465c;  /* dashed = a broken line; half-hour rows use it, on-the-hour rows use the solid one */
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    margin: 0; 
+    background: #24202b; 
+    color: #f3ece8; 
+    font-family: system-ui, sans-serif; 
+    padding: 40px 20px; 
+}
+
+main { 
+    max-width: 900px; 
+    margin: auto; 
+}
+
+h1 { 
+    color: #e4b6a1; 
+    font-size: 2.6rem; 
+    margin-bottom: 8px; 
+}
+
+p { 
+    color: #cbbbce; 
+    margin-bottom: 32px; 
+}
+
+.table-wrap { 
+    overflow-x: auto; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: center; 
+    color: #302337; 
+    background: #f3ece8; 
+}
+
+caption { 
+    color: #f3ece8; 
+    text-align: left; 
+    padding: 16px 0; 
+    font-size: 1.15rem; 
+    font-weight: bold; 
+}
+
+th { 
+    background: #3b3045; 
+    color: #fff; 
+    padding: 16px; 
+}
+
+td { 
+    height: 54px; 
+    min-width: 100px; 
+    border-inline: 1px solid #aa98b2; 
+}
+
+.time { 
+    white-space: nowrap; 
+    font-size: 0.9rem; 
+}
+
+.available-0 { 
+    background-color: var(--color0);  /* var() reads --color0 from :root */
+}
+
+.available-1 { 
+    background-color: 
+    var(--color1); 
+}
+
+.available-2 { 
+    background-color: var(--color2); 
+}
+
+.available-3 { 
+    background-color: var(--color3); 
+}
+
+.available-4 { 
+    background-color: var(--color4); 
+    color: white; 
+}
+
+.available-5 { 
+    background-color: var(--color5); 
+    color: white; 
+}
+
+.sharp > td { 
+    border-bottom: var(--solid-border);  /* var() drops the whole stored border in: one value instead of three */
+}
+
+.half > td { 
+    border-bottom: var(--dashed-border); 
+}
+
+#legend { 
+    margin: 28px auto 0; 
+    max-width: 360px; 
+    text-align: center; 
+}
+
+#legend > span { 
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+#legend-gradient { 
+    height: 24px; 
+    border: 1px solid #cbbbce; 
+    background-image: linear-gradient(to right, 
+    var(--color0) 0% 17%,  /* two positions on one color stop = a solid band from 0% to 17%, no blending */
+    var(--color1) 17% 33%, 
+    var(--color2) 33% 50%, 
+    var(--color3) 50% 67%, 
+    var(--color4) 67% 83%, 
+    var(--color5) 83% 100%); 
+}
+
+.labels { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 0.8rem; 
+    margin-top: 6px; 
+}
+
+.sharp td { 
+    border-bottom: var(--solid-border); 
+}
+
+.half td { 
+    border-bottom: var(--dashed-border); 
+}

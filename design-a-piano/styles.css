@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;  /* inherit = copy the parent's value; html is set once and every element follows */
+}
+
+#piano {
+  background-color: #00471b;
+  width: 992px;
+  height: 290px;
+  margin: 80px auto;
+  padding: 90px 20px 0 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.keys {
+  background-color: #040404;
+  width: 949px;
+  height: 180px;
+  padding-left: 2px;
+  overflow: hidden;  /* clips the floated keys at the box edge and makes this box contain its floats */
+}
+
+.key {
+  background-color: #ffffff;
+  position: relative;
+  width: 41px;
+  height: 175px;
+  margin: 2px;
+  float: left;  /* pulls each key out of the normal flow and lines them up side by side, left to right */
+  border-radius: 0 0 3px 3px;
+}
+
+.key.black--key::after {  /* compound selector: only elements with both classes; ::after draws the black key on top */
+  background-color: #1d1e22;
+  content: "";
+  position: absolute;
+  left: -18px;  /* a negative offset nudges the black key left so it straddles the gap between two white keys */
+  width: 32px;
+  height: 100px;
+  border-radius: 0 0 3px 3px;
+}
+
+.logo {
+  width: 200px;
+  position: absolute;
+  top: 23px;
+}
+
+@media (max-width: 768px) {  /* breakpoint: these rules only apply when the viewport is 768px wide or narrower */
+  #piano {
+    width: 358px;
+  }
+
+  .keys {
+    width: 318px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {  /* and joins two conditions into a range: only tablet widths (769px to 1199px) match */
+  #piano {
+    width: 675px;
+  }  
+  .keys {
+    width: 633px;
+  }
+}
+
