@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #100f1c;
+  background-image: radial-gradient(
+    ellipse at center,  /* ellipse (instead of circle) stretches the glow to fit the box's shape */
+    #302740 0%,
+    #100f1c 70%
+  );
+}
+
+.space {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.earth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #8274b0;
+  background-image: radial-gradient(
+    circle at 30% 30%,
+    #edb598 0%,
+    #a28abf 35%,
+    #494164 75%
+  );
+  box-shadow:
+    inset -12px -8px 20px #211b3d,  /* inset = the shadow is drawn inside the shape, which darkens one side of the planet */
+    0 0 35px #a28abf55;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  transform-origin: 0 0;
+  border: 1px solid #b6a4cd44;
+  border-radius: 50%;
+  animation: orbit 5s linear infinite;
+}
+
+.moon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #edb598;
+  box-shadow:
+    inset -6px -4px 8px #936d77,
+    0 0 15px #edb59844;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);  /* two transform functions chained in one value; the animation replaces the element's transform, so translate is repeated here to keep the orbit centered while rotate spins it */
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}

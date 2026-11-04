@@ -172,6 +172,15 @@ I'm a self-taught web developer working through six freeCodeCamp certifications 
 | Design a Newspaper Layout | rwd lab | [live](https://builds.guerz.lol/design-a-newspaper-layout/) | [code](./design-a-newspaper-layout/) |
 | Build a Product Landing Page | rwd cert project | [live](https://builds.guerz.lol/build-a-product-landing-page/) | [code](./build-a-product-landing-page/) |
 
+### Animations
+
+| Build | Type | Live | Code |
+|---|---|---|---|
+| Build an Animated Ferris Wheel | rwd workshop | [live](https://builds.guerz.lol/build-an-animated-ferris-wheel/) | [code](./build-an-animated-ferris-wheel/) |
+| Build a Moon Orbit | rwd lab | [live](https://builds.guerz.lol/build-a-moon-orbit/) | [code](./build-a-moon-orbit/) |
+| Build a Flappy Penguin | rwd workshop | [live](https://builds.guerz.lol/build-a-flappy-penguin/) | [code](./build-a-flappy-penguin/) |
+| Build a Personal Portfolio | rwd lab | [live](https://builds.guerz.lol/build-a-personal-portfolio/) | [code](./build-a-personal-portfolio/) |
+
 ### Legacy Responsive Web Design (V8)
 
 Builds from freeCodeCamp's older [Responsive Web Design (V8)](https://www.freecodecamp.org/learn/2022/responsive-web-design/) curriculum, kept in their own `legacy-rwd-v8/` folder so they don't mix with the v9 builds above.
